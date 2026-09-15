@@ -2,21 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: Arial, sans-serif;
 }
 
 html {
     background-color: #0a1017;
+    min-height: 100%;
 }
 
 body {
-    max-width: 720px;
+    width: 100%;
     min-height: 100vh;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     background-color: #eef1f9;
     color: #142033;
     padding: 24px 28px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+}
+
+main {
+    flex: 1;
 }
 
 .header-container {
@@ -32,7 +39,7 @@ body {
 .logo-area small {
     font-family: Arial, sans-serif;
     font-size: 0.65rem;
-    color: #bd392c;
+    color: #080808;
     letter-spacing: 1.5px;
     font-weight: bold;
     display: block;
@@ -56,7 +63,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #dce5f7;
+    background-color: #e0e7f5;
     padding: 42px 28px;
     gap: 28px;
     border-radius: 0;
@@ -78,7 +85,7 @@ body {
 .hero-text .subtitle {
     font-family: Arial, sans-serif;
     font-size: 0.65rem;
-    color: #bd392c;
+    color: #080808;
     font-weight: bold;
     letter-spacing: 1.5px;
     display: block;
@@ -112,7 +119,7 @@ body {
 .section-title small {
     font-family: Arial, sans-serif;
     font-size: 0.65rem;
-    color: #bd392c;
+    color: #000000;
     font-weight: bold;
     letter-spacing: 1.5px;
     display: block;
@@ -177,43 +184,4 @@ img {
     height: auto;
     display: block;
 }
-
-@media (max-width: 700px) {
-    body {
-        padding: 18px;
-    }
-
-    .header-container {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .hero-banner {
-        padding: 30px 22px;
-        flex-direction: column;
-    }
-
-    .hero-banner > img {
-        order: 1;
-        width: 100%;
-    }
-
-    .hero-text {
-        order: 2;
-    }
-
-    .hero-text h2 {
-        font-size: 2.3rem;
-    }
-
-    .card {
-        flex-basis: calc((100% - 12px) / 2);
-    }
-}
-
-@media (max-width: 430px) {
-    .card {
-        flex-basis: 100%;
-    }
-}
+ 
