@@ -6,7 +6,7 @@
 }
 
 html {
-    background-color: #0a1017;
+    background-color: #325174;
     min-height: 100%;
 }
 
@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    background-color: #eef1f9;
+    background-color: #76787d;
     color: #142033;
     padding: 24px 28px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
@@ -38,7 +38,7 @@ main {
 
 .logo-area small {
     font-family: Arial, sans-serif;
-    font-size: 0.65rem;
+    font-size: 15px;
     color: #080808;
     letter-spacing: 1.5px;
     font-weight: bold;
@@ -47,44 +47,45 @@ main {
 }
 
 .logo-area h1 {
-    font-size: 1.6rem;
+    font-size: 30px;
     color: #142033;
     font-weight: bold;
 }
 
 .menu-item {
     font-family: Arial, sans-serif;
-    font-size: 0.8rem;
+    font-size: 15px;
     color: #142033;
     cursor: pointer;
+
 }
 
-.hero-banner {
+.map-banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #e0e7f5;
-    padding: 42px 28px;
-    gap: 28px;
+    padding: 30px 90px;
+    gap: 23px;
     border-radius: 0;
     margin-bottom: 42px;
 }
 
-.hero-banner > img {
+.map-banner > img {
     order: 2;
-    width: 40%;
+    width: 500px;
     border-radius: 0;
     object-fit: cover;
 }
 
-.hero-text {
+.inseto-text {
     order: 1;
     flex: 1;
 }
 
-.hero-text .subtitle {
+.inseto-text .subtitle {
     font-family: Arial, sans-serif;
-    font-size: 0.65rem;
+    font-size: 23px;
     color: #080808;
     font-weight: bold;
     letter-spacing: 1.5px;
@@ -92,15 +93,14 @@ main {
     margin-bottom: 15px;
 }
 
-.hero-text h2 {
-    font-size: 3rem;
-    line-height: 1.1;
+.inseto-text h2 {
+    font-size: 30px;
     color: #142033;
     font-weight: bold;
     margin-bottom: 18px;
 }
 
-.hero-text .description {
+.inseto-text .description {
     font-family: Arial, sans-serif;
     font-size: 0.85rem;
     color: #26364d;
@@ -109,7 +109,7 @@ main {
 }
 
 .section-title {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 #destaque {
@@ -118,7 +118,7 @@ main {
 
 .section-title small {
     font-family: Arial, sans-serif;
-    font-size: 0.65rem;
+    font-size: 15;
     color: #000000;
     font-weight: bold;
     letter-spacing: 1.5px;
@@ -127,7 +127,7 @@ main {
 }
 
 .section-title h2 {
-    font-size: 2rem;
+    font-size: 20px;
     color: #142033;
     font-weight: bold;
 }
@@ -139,7 +139,9 @@ main {
 }
 
 .card {
-    flex: 1 1 calc((100% - 24px) / 3);
+    width: 250px;
+    border: 10px black;
+    padding: 4px;
     box-sizing: border-box;
     min-width: 0;
     background-color: #ffffff;
@@ -150,15 +152,15 @@ main {
 
 .card img {
     width: 100%;
-    height: 116px;
+    height: 200px;
     margin-bottom: 10px;
     border-radius: 0;
     object-fit: cover;
 }
 
 .card h3 {
-    padding: 0 10px;
-    font-size: 0.95rem;
+    padding: 10px;
+    font-size: 16px;
     color: #142033;
     margin-bottom: 8px;
 }
@@ -166,17 +168,16 @@ main {
 .card p {
     padding: 0 10px;
     font-family: Arial, sans-serif;
-    font-size: 0.68rem;
+    font-size: 16px;
     color: #40516a;
-    line-height: 1.4;
 }
 
 footer {
     margin-top: 38px;
     padding: 18px 14px 0;
-    border-top: 1px solid #d2d9e5;
+    border-top: 1px #d2d9e5;
     font-family: Arial, sans-serif;
-    font-size: 0.75rem;
+    font-size: 10px;
     color: rgb(64, 81, 106);
 }
 img {
@@ -184,4 +185,3 @@ img {
     height: auto;
     display: block;
 }
- 
